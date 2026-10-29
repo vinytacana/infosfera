@@ -20,6 +20,10 @@ class Pagina(HTMLParser):
         self.errors = []
         self.h1 = 0
         self.scripts = 0
+        self.contact_emails = []
+        self.images = []
+        self.content = []
+        self.text_field = None
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -35,8 +39,19 @@ class Pagina(HTMLParser):
         if tag == 'li' and 'link-group' in classes:
             self.current = []
             self.groups.append(self.current)
+            self.content.append({'title': '', 'description': ''})
+        if self.current is not None and tag in ('h3', 'p'):
+            self.text_field = 'title' if tag == 'h3' else 'description'
         if tag == 'a':
             href = a.get('href', '')
+            if href.startswith('#'):
+                self.references.append(href[1:])
+                return
+            if href.startswith('mailto:'):
+                self.contact_emails.append(href[7:])
+                if not re.fullmatch(r'mailto:[^@\s?]+@[^@\s?]+\.[^@\s?]+', href):
+                    self.errors.append(f'Contato malformado: {href}')
+                return
             link = {'url': href, 'primary': 'application-link' in classes}
             self.links.append(link)
             if self.current is not None:
@@ -56,8 +71,18 @@ class Pagina(HTMLParser):
             asset = a.get('src' if tag == 'img' else 'href', '')
             if not asset or asset.startswith(('/', 'http:', 'https:')) or not (self.root / asset).is_file():
                 self.errors.append(f'Asset ausente ou sem caminho relativo: {asset}')
+        if tag == 'img':
+            self.images.append(a)
+            if 'alt' not in a or not all(a.get(size, '').isdigit() and int(a[size]) > 0 for size in ('width', 'height')):
+                self.errors.append('Imagem sem alt ou dimensões explícitas.')
+
+    def handle_data(self, data):
+        if self.current is not None and self.text_field:
+            self.content[-1][self.text_field] += data
 
     def handle_endtag(self, tag):
+        if tag in ('h3', 'p'):
+            self.text_field = None
         if tag == 'li':
             self.current = None
 
@@ -70,6 +95,8 @@ class Pagina(HTMLParser):
             self.errors.append('A página precisa de um h1 e uma lista de aplicações.')
         if self.scripts:
             self.errors.append('A página de links não deve carregar JavaScript.')
+        if any(not field.strip() for content in self.content for field in content.values()):
+            self.errors.append('Aplicação sem título ou descrição.')
         for group in self.groups:
             primary = [link for link in group if link['primary']]
             if len(primary) != 1:
@@ -108,4 +135,4 @@ if __name__ == '__main__':
     urls = page.verificar()
     if page.errors:
         raise SystemExit('\n'.join(page.errors))
-    print(f'OK: {len(page.groups)} aplicações, {len(urls)} links únicos; URLs, recortes, assets e proteção dos links válidos; sem JavaScript.')
+    print(f'OK: {len(page.groups)} aplicações, {len(urls)} links únicos e {len(page.contact_emails)} contatos; conteúdo, assets e proteção dos links válidos; sem JavaScript.')
