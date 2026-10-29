@@ -1,0 +1,8 @@
+# Publicação pela opção "Deploy from a branch" do GitHub Pages (Jekyll).
+# Mantenha apenas os arquivos necessários ao site no conteúdo publicado.
+exclude:
+  - README.md
+  - docs
+  - scripts
+  - tests
+  - node_modules

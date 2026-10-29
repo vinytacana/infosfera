@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Painel Pró-Gestão Saúde",
+    "url": "https://tcgeo.tcero.tc.br/prgestosade?centro=-63.815046%2C-8.738442&zoom=11&camadas=19982987-dd57-43b1-bace-68a572171e07"
+  },
+  {
+    "title": "Monitoramento de Queimadas",
+    "url": "https://tcgeo.tcero.tc.br/queimadas?centro=-63.000000%2C-10.700000&zoom=7&camadas=457eb3f3-5e8c-4b15-b11e-4e72b261eb86%2C4a50c5be-8433-4960-ab87-ec0a25690a2c%2C9bf4da13-b12f-4213-b935-6c3c9569da46%2Ccd8f69a8-16e2-42a0-ad8c-501b4a0f9745%2Cd8cc6c6c-a132-4995-a983-c2d98a8ea7a1"
+  },
+  {
+    "title": "Sub-bacia Hidrográfica do Rio Palmeira",
+    "url": "https://tcgeo.tcero.tc.br/sub-bacia-rio-palmeiras?centro=-60.956900%2C-11.586900&zoom=11&camadas=490292d4-7288-479a-b2fa-bdf383aaa927%2C2f3bcb5c-1a8f-4031-9613-588b47332cff"
+  },
+  {
+    "title": "Planejamento da Expansão de Creches",
+    "url": "https://tcgeo.tcero.tc.br/planejamentoexpansocreche?centro=-61.963253%2C-10.882790&zoom=12&camadas=55b85a4c-2df3-47a5-bd4e-95504c6575b9%2C3fba59f9-9764-4e9b-856a-9f0d241120d9%2C1e5b0704-0604-4ff2-ae8d-b1e000cbdbfd%2C51555f57-bed6-4ca9-a426-14a10e474474%2C88e3d557-f70e-40e0-9e2d-e592dac91069%2Ce64b6815-7565-4c64-94be-f681f61ede55%2C8f34ce96-af7e-4cac-a030-2628cdb14ecc%2C1da55788-3bd6-4931-a6fe-7774370287fb"
+  },
+  {
+    "title": "Painel Pró-Gestão Saúde",
+    "url": "https://tcgeo.tcero.tc.br/prgestosade?centro=-63.852124%2C-8.766524&zoom=16&camadas=a1cad72d-de90-4c69-9893-5f9836e56e0e%2Ca251f437-5ac9-4b50-ac47-cf059b145498"
+  },
+  {
+    "title": "Unidades de Conservação Estaduais",
+    "url": "https://tcgeo.tcero.tc.br/unidadesconservao?centro=-63.147989%2C-8.929864&zoom=11&camadas=c33816f0-01d6-4d9f-ac57-b50b18c9f6bf%2Cc6a08e3f-a943-4f68-86f8-07b58fe6a5f8"
+  },
+  {
+    "title": "Sub-bacia Hidrográfica do Rio Palmeira",
+    "url": "https://tcgeo.tcero.tc.br/sub-bacia-rio-palmeiras?centro=-61.047537%2C-11.588245&zoom=11&camadas=f61748dd-06bd-4be7-8846-3a449932a7ce%2C490292d4-7288-479a-b2fa-bdf383aaa927%2C94b46dd5-ea26-48fa-9de8-6036313dcca7%2C22cfb6ff-a4eb-450e-b8c0-36c73bd973f2%2C80ebd8aa-09a9-4aad-9d79-5d393340659a%2C345772b4-a1b9-4788-a9a4-14181395b787"
+  }
+]
