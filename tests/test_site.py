@@ -32,6 +32,31 @@ class SiteTests(unittest.TestCase):
         self.assertFalse((ROOT / 'script.js').exists())
         self.assertFalse(any('/saero' in url for url in self.urls))
 
+    def test_descricoes_e_contatos(self):
+        self.assertEqual(len(self.page.content), 6)
+        self.assertTrue(all(row['title'].strip() and row['description'].strip() for row in self.page.content))
+        self.assertCountEqual(self.page.contact_emails, [
+            'sepepp@tce.ro.gov.br', 'luis.bueno@tce.ro.gov.br', 'joselanio.morais@tce.ro.gov.br',
+        ])
+        html = (ROOT / 'index.html').read_text()
+        for text in ('Luis Fernando Bueno', 'Joselânio Ferreira de Morais',
+                     'Secretaria Especial de Projetos Especiais em Políticas Públicas (SEPEPP)'):
+            self.assertIn(text, ' '.join(html.split()))
+        self.assertEqual(html.count('Assessor Técnico'), 2)
+
+    def test_identidade_e_favicon(self):
+        from PIL import Image
+        html = (ROOT / 'index.html').read_text()
+        self.assertNotIn('favicon.svg', html)
+        self.assertFalse((ROOT / 'assets' / 'favicon.svg').exists())
+        for filename, size in [('favicon-32.png', 32), ('favicon-48.png', 48), ('apple-touch-icon.png', 180)]:
+            self.assertIn(f'./assets/{filename}', html)
+            with Image.open(ROOT / 'assets' / filename) as image:
+                self.assertEqual(image.size, (size, size))
+        self.assertEqual({row['src'] for row in self.page.images}, {
+            './assets/vertice-logo.webp', './assets/tcero-white.webp',
+        })
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -2,7 +2,9 @@
 
 Plataforma de Inteligência Territorial baseada em Evidências.
 
-Material de apoio ao simpósio, reunindo os links das aplicações apresentadas. Escaneie o QR Code do slide final, escolha uma aplicação e acesse o painel.
+Material de apoio ao simpósio, reunindo as aplicações apresentadas, uma breve explicação de cada painel e os contatos institucionais. Escaneie o QR Code do slide final, conheça os painéis e escolha uma aplicação.
+
+[Acessar a página do Vértice](https://vinytacana.github.io/infosfera/)
 
 ## Aplicações apresentadas
 

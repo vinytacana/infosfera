@@ -3,300 +3,263 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#08131b" />
+    <meta name="theme-color" content="#0b1921" />
     <meta
       name="description"
-      content="Acesse os painéis do Vértice apresentados no simpósio. Inteligência territorial baseada em evidências."
+      content="Conheça o Vértice e acesse painéis públicos de inteligência territorial, saúde, educação e meio ambiente de Rondônia."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Vértice — Links do simpósio" />
+    <meta property="og:title" content="Vértice — Inteligência Territorial" />
     <meta
       property="og:description"
-      content="Acesso direto às aplicações apresentadas no simpósio."
+      content="Conheça a plataforma e explore seus painéis públicos."
     />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="./assets/favicon-48.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Vértice — Links do simpósio</title>
+    <title>Vértice — Inteligência Territorial</title>
   </head>
   <body>
+    <a class="skip-link" href="#aplicacoes">Ir para as aplicações</a>
     <div class="page">
       <header class="page-header">
+        <div class="brand-surface">
+          <img
+            src="./assets/vertice-logo.webp"
+            width="112"
+            height="112"
+            alt=""
+            fetchpriority="high"
+          />
+        </div>
         <h1>Vértice</h1>
         <p class="subtitle">
-          Plataforma de Inteligência Territorial baseada em Evidências.
+          Plataforma de Inteligência Territorial<br class="desktop-break" />
+          baseada em Evidências
         </p>
-        <p class="intro">Acesse os painéis apresentados no simpósio.</p>
       </header>
       <main>
-        <ul class="link-list" aria-label="Aplicações apresentadas no simpósio">
-          <li class="link-group">
-            <a
-              class="application-link application-link-primary"
-              href="https://tcgeo.tcero.tc.br/vertice"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="application-icon"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title">Sobre o Vértice</h2>
+          <p>
+            O Vértice reúne painéis públicos e informações territoriais para
+            facilitar o acesso, a análise e a compreensão de dados sobre
+            diferentes áreas da gestão pública. Por meio de mapas e indicadores,
+            contribui para o planejamento, o acompanhamento de políticas
+            públicas e a tomada de decisões baseada em evidências.
+          </p>
+        </section>
+        <section
+          class="applications"
+          id="aplicacoes"
+          tabindex="-1"
+          aria-labelledby="applications-title"
+        >
+          <h2 id="applications-title">Aplicações</h2>
+          <ul class="link-list">
+            <li class="link-group">
+              <h3 id="app-0">Vértice — acesso principal</h3>
+              <p>
+                O Vértice reúne painéis públicos com dados e informações
+                territoriais, permitindo explorar diferentes temas e indicadores
+                em uma mesma plataforma.
+              </p>
+              <div class="application-actions">
+                <a
+                  class="application-link"
+                  href="https://tcgeo.tcero.tc.br/vertice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acessar Vértice<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Vértice — acesso principal (abre em nova aba)</span
+                  ></a
                 >
-                  <path d="m4 5 8 15 8-15M8 5l4 8 4-8" /></svg
-              ></span>
-              <span class="link-title">Vértice — acesso principal</span>
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span>
-            </a>
-          </li>
-          <li class="link-group">
-            <a
-              class="application-link"
-              href="https://tcgeo.tcero.tc.br/prgestosade?centro=-63.815046%2C-8.738442&amp;zoom=11&amp;camadas=19982987-dd57-43b1-bace-68a572171e07"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="application-icon"
-                ><svg
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.55"
-                  viewBox="0 0 24 24"
+              </div>
+            </li>
+            <li class="link-group">
+              <h3 id="app-1">Painel Pró-Gestão Saúde</h3>
+              <p>
+                Integra informações e indicadores sobre a saúde pública em
+                Rondônia para identificar necessidades e apoiar o planejamento
+                de políticas e serviços de saúde.
+              </p>
+              <div class="application-actions">
+                <a
+                  class="application-link"
+                  href="https://tcgeo.tcero.tc.br/prgestosade?centro=-63.815046%2C-8.738442&amp;zoom=11&amp;camadas=19982987-dd57-43b1-bace-68a572171e07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acessar painel<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Painel Pró-Gestão Saúde (abre em nova aba)</span
+                  ></a
+                ><a
+                  class="alternate-link"
+                  href="https://tcgeo.tcero.tc.br/prgestosade?centro=-63.852124%2C-8.766524&amp;zoom=16&amp;camadas=a1cad72d-de90-4c69-9893-5f9836e56e0e%2Ca251f437-5ac9-4b50-ac47-cf059b145498"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Explorar outra visualização<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Painel Pró-Gestão Saúde (abre em nova aba)</span
+                  ></a
                 >
-                  <path
-                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
-                  ></path>
-                  <path d="M3.9 12h4l2-3.4 3.1 6.2 2.1-2.8H20"></path></svg
-              ></span>
-              <span class="link-title">Painel Pró-Gestão Saúde</span>
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span>
-            </a>
-            <a
-              class="alternate-link"
-              href="https://tcgeo.tcero.tc.br/prgestosade?centro=-63.852124%2C-8.766524&amp;zoom=16&amp;camadas=a1cad72d-de90-4c69-9893-5f9836e56e0e%2Ca251f437-5ac9-4b50-ac47-cf059b145498"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Outra visualização<span class="sr-only">
-                de Painel Pró-Gestão Saúde</span
-              ><svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span></a
-            >
-          </li>
-          <li class="link-group">
-            <a
-              class="application-link"
-              href="https://tcgeo.tcero.tc.br/queimadas?centro=-63.000000%2C-10.700000&amp;zoom=7&amp;camadas=457eb3f3-5e8c-4b15-b11e-4e72b261eb86%2C4a50c5be-8433-4960-ab87-ec0a25690a2c%2C9bf4da13-b12f-4213-b935-6c3c9569da46%2Ccd8f69a8-16e2-42a0-ad8c-501b4a0f9745%2Cd8cc6c6c-a132-4995-a983-c2d98a8ea7a1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="application-icon"
-                ><svg
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.55"
-                  viewBox="0 0 24 24"
+              </div>
+            </li>
+            <li class="link-group">
+              <h3 id="app-2">Monitoramento de Queimadas</h3>
+              <p>
+                Apresenta mapas e indicadores sobre focos de calor, ocorrências
+                de fogo e áreas queimadas em Rondônia, com análises territoriais
+                e históricas para o monitoramento ambiental.
+              </p>
+              <div class="application-actions">
+                <a
+                  class="application-link"
+                  href="https://tcgeo.tcero.tc.br/queimadas?centro=-63.000000%2C-10.700000&amp;zoom=7&amp;camadas=457eb3f3-5e8c-4b15-b11e-4e72b261eb86%2C4a50c5be-8433-4960-ab87-ec0a25690a2c%2C9bf4da13-b12f-4213-b935-6c3c9569da46%2Ccd8f69a8-16e2-42a0-ad8c-501b4a0f9745%2Cd8cc6c6c-a132-4995-a983-c2d98a8ea7a1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acessar painel<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Monitoramento de Queimadas (abre em nova aba)</span
+                  ></a
                 >
-                  <path
-                    d="M12 22c4 0 7-2.8 7-6.4 0-2.7-1.3-4.5-4-7.6.3 2.4-.9 3.3-1.8 3.9 0-3.9-2.7-7.3-5-9.9.3 4.4-2.7 6.7-3.2 10.7C4.4 17.7 7.8 22 12 22Z"
-                  ></path>
-                  <path
-                    d="M11.8 22c2.1 0 3.4-1.4 3.4-3.1 0-1.1-.8-2.2-1.9-3.6-.1 1.3-.9 1.9-1.2 2.1-.4-1.8-1.5-2.6-2.1-3.4.1 2.8-1.3 3.4-1.3 4.9 0 1.7 1.2 3.1 3.1 3.1Z"
-                  ></path></svg
-              ></span>
-              <span class="link-title">Monitoramento de Queimadas</span>
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span>
-            </a>
-          </li>
-          <li class="link-group">
-            <a
-              class="application-link"
-              href="https://tcgeo.tcero.tc.br/sub-bacia-rio-palmeiras?centro=-60.956900%2C-11.586900&amp;zoom=11&amp;camadas=490292d4-7288-479a-b2fa-bdf383aaa927%2C2f3bcb5c-1a8f-4031-9613-588b47332cff"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="application-icon"
-                ><svg
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.55"
-                  viewBox="0 0 24 24"
+              </div>
+            </li>
+            <li class="link-group">
+              <h3 id="app-3">Sub-bacia Hidrográfica do Rio Palmeira</h3>
+              <p>
+                Reúne informações socioeconômicas, ambientais, produtivas e
+                territoriais da região para compreender as dinâmicas locais e
+                apoiar o desenvolvimento regional sustentável.
+              </p>
+              <div class="application-actions">
+                <a
+                  class="application-link"
+                  href="https://tcgeo.tcero.tc.br/sub-bacia-rio-palmeiras?centro=-60.956900%2C-11.586900&amp;zoom=11&amp;camadas=490292d4-7288-479a-b2fa-bdf383aaa927%2C2f3bcb5c-1a8f-4031-9613-588b47332cff"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acessar painel<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Sub-bacia Hidrográfica do Rio Palmeira (abre em nova
+                    aba)</span
+                  ></a
+                ><a
+                  class="alternate-link"
+                  href="https://tcgeo.tcero.tc.br/sub-bacia-rio-palmeiras?centro=-61.047537%2C-11.588245&amp;zoom=11&amp;camadas=f61748dd-06bd-4be7-8846-3a449932a7ce%2C490292d4-7288-479a-b2fa-bdf383aaa927%2C94b46dd5-ea26-48fa-9de8-6036313dcca7%2C22cfb6ff-a4eb-450e-b8c0-36c73bd973f2%2C80ebd8aa-09a9-4aad-9d79-5d393340659a%2C345772b4-a1b9-4788-a9a4-14181395b787"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Explorar outra visualização<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Sub-bacia Hidrográfica do Rio Palmeira (abre em nova
+                    aba)</span
+                  ></a
                 >
-                  <path
-                    d="M2 7c3-2 5-2 8 0s5 2 8 0 4-2 4-2M2 13c3-2 5-2 8 0s5 2 8 0 4-2 4-2M2 19c3-2 5-2 8 0s5 2 8 0 4-2 4-2"
-                  ></path></svg
-              ></span>
-              <span class="link-title"
-                >Sub-bacia Hidrográfica do Rio Palmeira</span
-              >
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span>
-            </a>
-            <a
-              class="alternate-link"
-              href="https://tcgeo.tcero.tc.br/sub-bacia-rio-palmeiras?centro=-61.047537%2C-11.588245&amp;zoom=11&amp;camadas=f61748dd-06bd-4be7-8846-3a449932a7ce%2C490292d4-7288-479a-b2fa-bdf383aaa927%2C94b46dd5-ea26-48fa-9de8-6036313dcca7%2C22cfb6ff-a4eb-450e-b8c0-36c73bd973f2%2C80ebd8aa-09a9-4aad-9d79-5d393340659a%2C345772b4-a1b9-4788-a9a4-14181395b787"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Outra visualização<span class="sr-only">
-                de Sub-bacia Hidrográfica do Rio Palmeira</span
-              ><svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span></a
-            >
-          </li>
-          <li class="link-group">
-            <a
-              class="application-link"
-              href="https://tcgeo.tcero.tc.br/planejamentoexpansocreche?centro=-61.963253%2C-10.882790&amp;zoom=12&amp;camadas=55b85a4c-2df3-47a5-bd4e-95504c6575b9%2C3fba59f9-9764-4e9b-856a-9f0d241120d9%2C1e5b0704-0604-4ff2-ae8d-b1e000cbdbfd%2C51555f57-bed6-4ca9-a426-14a10e474474%2C88e3d557-f70e-40e0-9e2d-e592dac91069%2Ce64b6815-7565-4c64-94be-f681f61ede55%2C8f34ce96-af7e-4cac-a030-2628cdb14ecc%2C1da55788-3bd6-4931-a6fe-7774370287fb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="application-icon"
-                ><svg
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.55"
-                  viewBox="0 0 24 24"
+              </div>
+            </li>
+            <li class="link-group">
+              <h3 id="app-4">Planejamento da Expansão de Creches</h3>
+              <p>
+                Integra informações territoriais para identificar demandas,
+                analisar a oferta de creches e apoiar a definição de prioridades
+                para ampliar o acesso à educação infantil.
+              </p>
+              <div class="application-actions">
+                <a
+                  class="application-link"
+                  href="https://tcgeo.tcero.tc.br/planejamentoexpansocreche?centro=-61.963253%2C-10.882790&amp;zoom=12&amp;camadas=55b85a4c-2df3-47a5-bd4e-95504c6575b9%2C3fba59f9-9764-4e9b-856a-9f0d241120d9%2C1e5b0704-0604-4ff2-ae8d-b1e000cbdbfd%2C51555f57-bed6-4ca9-a426-14a10e474474%2C88e3d557-f70e-40e0-9e2d-e592dac91069%2Ce64b6815-7565-4c64-94be-f681f61ede55%2C8f34ce96-af7e-4cac-a030-2628cdb14ecc%2C1da55788-3bd6-4931-a6fe-7774370287fb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acessar painel<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Planejamento da Expansão de Creches (abre em nova
+                    aba)</span
+                  ></a
                 >
-                  <path d="m3 10 9-7 9 7v11H3z"></path>
-                  <path d="M9 21v-8h6v8M3 10h18M8 7h.01M16 7h.01"></path></svg
-              ></span>
-              <span class="link-title"
-                >Planejamento da Expansão de Creches</span
-              >
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span>
-            </a>
-          </li>
-          <li class="link-group">
-            <a
-              class="application-link"
-              href="https://tcgeo.tcero.tc.br/unidadesconservao?centro=-63.147989%2C-8.929864&amp;zoom=11&amp;camadas=c33816f0-01d6-4d9f-ac57-b50b18c9f6bf%2Cc6a08e3f-a943-4f68-86f8-07b58fe6a5f8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="application-icon"
-                ><svg
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.55"
-                  viewBox="0 0 24 24"
+              </div>
+            </li>
+            <li class="link-group">
+              <h3 id="app-5">Unidades de Conservação Estaduais</h3>
+              <p>
+                Reúne informações sobre áreas protegidas de Rondônia, incluindo
+                limites territoriais, desmatamento, fiscalização, atividades
+                produtivas e situação fundiária, para apoiar a conservação e a
+                gestão ambiental.
+              </p>
+              <div class="application-actions">
+                <a
+                  class="application-link"
+                  href="https://tcgeo.tcero.tc.br/unidadesconservao?centro=-63.147989%2C-8.929864&amp;zoom=11&amp;camadas=c33816f0-01d6-4d9f-ac57-b50b18c9f6bf%2Cc6a08e3f-a943-4f68-86f8-07b58fe6a5f8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acessar painel<span aria-hidden="true">↗</span
+                  ><span class="sr-only">
+                    — Unidades de Conservação Estaduais (abre em nova aba)</span
+                  ></a
                 >
-                  <path
-                    d="M21 3c-9 0-16 3.3-16 12a6 6 0 0 0 6 6c8.7 0 12-7 10-18Z"
-                  ></path>
-                  <path d="M4 20c3-6 6-9 12-12"></path></svg
-              ></span>
-              <span class="link-title">Unidades de Conservação Estaduais</span>
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17 17 7M7 7h10v10" /></svg
-              ><span class="sr-only"> (abre em nova aba)</span>
-            </a>
-          </li>
-        </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer class="page-footer">
-        <p>Aplicações hospedadas pelo TCE-RO.</p>
-        <p>
-          Material de apoio ao simpósio.<br />Esta página não é um portal
+        <section aria-labelledby="contacts-title">
+          <h2 id="contacts-title">Contatos institucionais</h2>
+          <div class="institution">
+            <img
+              class="institution-logo"
+              src="./assets/tcero-white.webp"
+              width="104"
+              height="97"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <div>
+              <p class="institution-name">
+                Tribunal de Contas do Estado de Rondônia (TCE-RO)
+              </p>
+              <p>
+                Secretaria Especial de Projetos Especiais em Políticas Públicas
+                (SEPEPP)
+              </p>
+              <a href="mailto:sepepp@tce.ro.gov.br">sepepp@tce.ro.gov.br</a>
+            </div>
+          </div>
+          <address class="people">
+            <div>
+              <p class="contact-name">Luis Fernando Bueno</p>
+              <p>Assessor Técnico</p>
+              <a href="mailto:luis.bueno@tce.ro.gov.br"
+                >luis.bueno@tce.ro.gov.br</a
+              >
+            </div>
+            <div>
+              <p class="contact-name">Joselânio Ferreira de Morais</p>
+              <p>Assessor Técnico</p>
+              <a href="mailto:joselanio.morais@tce.ro.gov.br"
+                >joselanio.morais@tce.ro.gov.br</a
+              >
+            </div>
+          </address>
+        </section>
+        <p class="disclaimer">
+          Material de apoio ao simpósio. Esta página não é um portal
           institucional oficial.
         </p>
       </footer>
