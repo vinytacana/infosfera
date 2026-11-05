@@ -14,6 +14,7 @@ Material de apoio ao simpósio, reunindo as aplicações apresentadas, uma breve
 - Sub-bacia Hidrográfica do Rio Palmeira.
 - Planejamento da Expansão de Creches.
 - Unidades de Conservação Estaduais.
+- Painel SAERO — resultados e indicadores educacionais de Rondônia.
 
 Saúde e sub-bacia incluem acessos a diferentes visualizações utilizadas na apresentação.
 
