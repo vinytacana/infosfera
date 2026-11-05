@@ -18,8 +18,8 @@ class SiteTests(unittest.TestCase):
 
     def test_links_e_estrutura(self):
         self.assertEqual(self.page.errors, [])
-        self.assertEqual(len(self.page.groups), 6)
-        self.assertEqual(sorted(len(group) for group in self.page.groups), [1, 1, 1, 1, 2, 2])
+        self.assertEqual(len(self.page.groups), 7)
+        self.assertEqual(sorted(len(group) for group in self.page.groups), [1, 1, 1, 1, 1, 2, 2])
         self.assertIn('https://tcgeo.tcero.tc.br/vertice', self.urls)
 
     def test_recortes_originais_preservados(self):
@@ -27,13 +27,16 @@ class SiteTests(unittest.TestCase):
         actual = [url for url in self.urls if '?' in url]
         self.assertCountEqual(actual, [row['url'] for row in expected])
 
-    def test_sem_javascript_e_saero_publico(self):
+    def test_sem_javascript_e_acesso_saero(self):
         self.assertEqual(self.page.scripts, 0)
         self.assertFalse((ROOT / 'script.js').exists())
-        self.assertFalse(any('/saero' in url for url in self.urls))
+        self.assertEqual(self.urls.count('https://tcgeo.tcero.tc.br/saero'), 1)
+        saero = self.page.content[-1]
+        self.assertEqual(saero['title'].strip(), 'Painel SAERO')
+        self.assertIn('IDERO', saero['description'])
 
     def test_descricoes_e_contatos(self):
-        self.assertEqual(len(self.page.content), 6)
+        self.assertEqual(len(self.page.content), 7)
         self.assertTrue(all(row['title'].strip() and row['description'].strip() for row in self.page.content))
         self.assertCountEqual(self.page.contact_emails, [
             'sepepp@tce.ro.gov.br', 'luis.bueno@tce.ro.gov.br', 'joselanio.morais@tce.ro.gov.br',
